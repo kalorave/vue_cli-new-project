@@ -1,18 +1,71 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1>Home</h1>
+    <h2>package.json</h2>
+    <pre>
+      {
+        "name": "global_game",
+        "version": "0.1.0",
+        "private": true,
+        "scripts": {
+          "serve": "vue-cli-service serve",
+          "build": "vue-cli-service build",
+          "test:unit": "vue-cli-service test:unit",
+          "lint": "vue-cli-service lint"
+        },
+        "dependencies": {
+          "core-js": "^3.6.5",
+          "register-service-worker": "^1.7.1",
+          "vue": "^2.6.11",
+          "vue-router": "^3.2.0",
+      	"vue-i18n": "^8.18.2",
+          "vue-svg-loader": "^0.16.0",
+          "vuex": "^3.4.0"
+        },
+        "devDependencies": {
+          "@types/jest": "^24.0.19",
+          "@typescript-eslint/eslint-plugin": "^2.33.0",
+          "@typescript-eslint/parser": "^2.33.0",
+          "@vue/cli-plugin-babel": "~4.4.0",
+          "@vue/cli-plugin-eslint": "~4.4.0",
+          "@vue/cli-plugin-pwa": "~4.4.0",
+          "@vue/cli-plugin-router": "~4.4.0",
+          "@vue/cli-plugin-typescript": "~4.4.0",
+          "@vue/cli-plugin-unit-jest": "~4.4.0",
+          "@vue/cli-plugin-vuex": "~4.4.0",
+          "@vue/cli-service": "~4.4.0",
+          "@vue/eslint-config-prettier": "^6.0.0",
+          "@vue/eslint-config-typescript": "^5.0.2",
+          "@vue/test-utils": "^1.0.3",
+          "eslint": "^6.7.2",
+          "eslint-plugin-prettier": "^3.1.3",
+          "eslint-plugin-vue": "^6.2.2",
+          "node-sass": "^4.12.0",
+          "prettier": "^1.19.1",
+          "sass-loader": "^8.0.2",
+          "typescript": "~3.9.3",
+          "vue-template-compiler": "^2.6.11"
+        }
+      }
+    </pre>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<style lang="scss" scoped>
+h2 {
+  color: tomato;
+  text-align: center;
+}
 
-export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
-};
-</script>
+pre {
+  border: 1px solid #ccc;
+  padding: 30px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0 0 15px -5px black;
+}
+</style>
