@@ -2,6 +2,7 @@
   <div class="">
     <h1>About</h1>
     <div class="foo">
+      <h1>Hello world</h1>
       <p v-for="item in 5" :key="item">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
